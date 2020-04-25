@@ -36,7 +36,7 @@ async function pic() {
     // let url = await meme.url;
     // return url;
 
-    let res = await data();
+    let res = await data().catch(err => console.log(err));
     let url = await res.memes[0].url;
     return url;
 
