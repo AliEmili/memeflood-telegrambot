@@ -1,13 +1,13 @@
 {
     "name": "memeflood-bot",
     "version": "1.0.0",
-	"engines": {
-		"node": "^8.10.0"
-	},
+    "engines": {
+        "node": "^8.10.0"
+    },
     "description": "nothing special",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
+        "start": "nodemon index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
@@ -16,6 +16,7 @@
     "dependencies": {
         "dotenv": "^8.2.0",
         "node-fetch": "^2.6.0",
+        "nodemon": "^2.0.3",
         "telegraf": "^3.37.0"
     }
 }
