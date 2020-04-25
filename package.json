@@ -16,8 +16,8 @@
     "dependencies": {
         "axios": "^0.19.2",
         "dotenv": "^8.2.0",
-        "node-fetch": "^2.6.0",
         "nodemon": "^2.0.3",
+        "request-promise": "^4.2.5",
         "telegraf": "^3.37.0"
     }
 }

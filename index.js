@@ -2,6 +2,7 @@ const telegraf = require('telegraf');
 require("dotenv").config();
 const Extra = require('telegraf/extra');
 const axios = require("axios").default;
+const { data } = require('./creatememe/getData');
 
 const token = process.env.BOT_TOKEN;
 const bot = new telegraf(token);
@@ -28,11 +29,15 @@ async function pic() {
     // let memes = await data.memes;
     // url = memes[0].url;
     // return url;
-    let response = await axios.get('https://meme-api.herokuapp.com/gimme/1')
-        .catch(err => console.log(err));
-    let data = await response.data;
-    let meme = await data.memes[0];
-    let url = await meme.url;
+    // let response = await axios.get('https://meme-api.herokuapp.com/gimme/1')
+    //     .catch(err => console.log(err));
+    // let data = await response.data;
+    // let meme = await data.memes[0];
+    // let url = await meme.url;
+    // return url;
+
+    let res = await data();
+    let url = await res.memes[0].url;
     return url;
 
 }
