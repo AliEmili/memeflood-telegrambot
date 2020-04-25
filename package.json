@@ -1,6 +1,9 @@
 {
     "name": "memeflood-bot",
     "version": "1.0.0",
+	"engines": {
+		"node": "^8.10.0"
+	},
     "description": "nothing special",
     "main": "index.js",
     "scripts": {
