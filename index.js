@@ -21,7 +21,7 @@ bot.action('next', async ctx => {
 // Generating picture
 async function pic() {
     var url;
-    let response = await fetch('https://meme-api.herokuapp.com/gimme/1')
+    let response = await fetch('http://meme-api.herokuapp.com/gimme/1')
         .catch(err => {
             console.log(err);
         })
